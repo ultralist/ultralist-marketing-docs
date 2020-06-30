@@ -1,0 +1,4 @@
+baseURL = "https://docs.ultralist.io/"
+languageCode = "en-us"
+title = "Ultralist docs"
+theme = "docsy"
