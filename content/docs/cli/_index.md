@@ -2,17 +2,9 @@
 title: "CLI"
 linkTitle: "CLI"
 weight: 1
+
 description: >
-  How to add content to your Docsy site.
+  How the Ultralist CLI works.
 ---
 
-This is the *CLI* docs.
-
-```javascript
-const s = 3
-
-const t = () => {
-  console..log(s)
-}
-
-```
+Below you'll find all documentation for the Ultralist CLI.

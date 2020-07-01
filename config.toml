@@ -3,3 +3,32 @@ languageCode = "en-us"
 title = "Ultralist docs"
 pygmentsUseClasses=true
 theme = "docsy"
+
+[params]
+copyright = "Ultralist LLC"
+
+[params.links]
+[[params.links.ultralist]]
+	name = "Pricing"
+	url = "https://ultralist.io/pricing"
+[[params.links.ultralist]]
+	name = "Download"
+	url = "https://github.com/ultralist/ultralist/releases"
+[[params.links.ultralist]]
+	name = "Docs"
+	url = "https://docs.ultralist.io"
+[[params.links.docs]]
+	name = "Quickstart"
+	url = "https://docs.ultralist.io/docs/quickstart"
+[[params.links.docs]]
+	name = "Ultralist Pro"
+	url = "https://docs.ultralist.io/docs/pro"
+[[params.links.docs]]
+	name = "API docs"
+	url = "https://docs.ultralist.io/docs/api"
+[[params.links.more]]
+	name = "Blog"
+	url = "https://docs.ultralist.io/blog"
+[[params.links.more]]
+	name = "Github"
+	url = "https://github.com/ultralist"
