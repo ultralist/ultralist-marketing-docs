@@ -1,6 +1,9 @@
+.nav-container {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;
+}
 .td-navbar {
   background: $navbar-background-color;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;
   height: 65px;
 
   .brand-name {

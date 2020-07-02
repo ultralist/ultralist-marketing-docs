@@ -12301,9 +12301,12 @@ readers do not read off random characters that represent icons */
   padding: 2px 3px 1px;
   background-color: rgba(27, 31, 35, 0.05); }
 
+.nav-container {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px; }
+
 .td-navbar {
   background: "#fff";
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;
   height: 65px; }
   .td-navbar .brand-name {
     font-family: "Oxanium";
@@ -12671,8 +12674,16 @@ footer {
     visibility: hidden; } }
 
 .hero {
-  padding-top: 100px;
-  color: green; }
+  padding-top: 100px; }
+  .hero h1 {
+    padding-bottom: 20px;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center; }
+  .hero h2 {
+    font-size: 22px;
+    color: #999;
+    text-align: center; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
