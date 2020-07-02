@@ -8,4 +8,19 @@ linkTitle: "Index"
     <h1>Command-line task management for tech folks.</h1>
     <h2>Ultralist is a simple, powerful, <a href="https://github.com/ultralist/ultralist">open source</a> task management system for the command line.</h2>
   </div>
+
+  <div class="terminal" id="cli-demo"></div>
 </div>
+
+<script type="module">
+  import DemoCLI from "/js/demo-cli.js"
+
+  const cli = new DemoCLI("#cli-demo")
+  const l = (async () => {
+    cli.printPrompt()
+    await cli.type("ultralist l by context")
+    cli.enterKey()
+    cli.println(Ultralist.formatHeading("No Contexts"))
+    cli.println(Ultralist.format(6,"", "+security update to latest version of securitrex 0.4"))
+  })()
+</script>
