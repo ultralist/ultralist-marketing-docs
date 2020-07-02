@@ -3,9 +3,26 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;
   height: 65px;
 
-  .navbar-brand {
-    color: green;
+  .brand-name {
+    font-family: "Oxanium";
+    font-size: 40px;
   }
+
+
+  .nav-links-holder {
+    width: 100%;
+  }
+
+  #main_navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .nav-links {
+      flex-grow: 1;
+    }
+  }
+
 }
 
 footer {

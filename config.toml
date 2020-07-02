@@ -7,6 +7,21 @@ theme = "docsy"
 [params]
 copyright = "Ultralist LLC"
 
+
+[[menu.main]]
+  name = "Github"
+  url = "https://github.com/ultralist"
+  weight = 1
+[[menu.main]]
+  name = "Docs"
+  url = "https://ultralist.io/docs"
+  weight = 2
+[[menu.main]]
+  name = "Pricing"
+  url = "https://ultralist.io/pricing"
+  weight = 3
+
+
 [params.links]
 [[params.links.ultralist]]
 	name = "Pricing"

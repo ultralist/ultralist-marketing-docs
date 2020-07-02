@@ -3003,7 +3003,7 @@ input[type="button"].btn-block {
     color: rgba(0, 0, 0, 0.9); }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5); }
+  color: #999; }
   .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
     color: rgba(0, 0, 0, 0.7); }
   .navbar-light .navbar-nav .nav-link.disabled {
@@ -3016,14 +3016,14 @@ input[type="button"].btn-block {
   color: rgba(0, 0, 0, 0.9); }
 
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
+  color: #999;
   border-color: rgba(0, 0, 0, 0.1); }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23999' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
 .navbar-light .navbar-text {
-  color: rgba(0, 0, 0, 0.5); }
+  color: #999; }
   .navbar-light .navbar-text a {
     color: rgba(0, 0, 0, 0.9); }
     .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
@@ -12285,17 +12285,54 @@ readers do not read off random characters that represent icons */
   right: 1rem;
   z-index: 22; }
 
-.td-content .highlight {
-  background-color: #272822; }
-  .td-content .highlight pre {
+.td-content pre {
+  color: #f8f8f2;
+  background-color: #272822;
+  border-radius: 0.2rem;
+  padding: 10px; }
+  .td-content pre code {
+    color: #f8f8f2;
+    border: none;
     padding: 10px; }
+
+.td-content code {
+  color: #e01e5a;
+  border: 1px solid #ddd;
+  border-radius: 0.2rem;
+  padding: 2px 3px 1px;
+  background-color: rgba(27, 31, 35, 0.05); }
 
 .td-navbar {
   background: "#fff";
   box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;
   height: 65px; }
-  .td-navbar .navbar-brand {
-    color: green; }
+  .td-navbar .brand-name {
+    font-family: "Oxanium";
+    font-size: 40px; }
+  .td-navbar .nav-links-holder {
+    width: 100%; }
+  .td-navbar #main_navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    .td-navbar #main_navbar .nav-links {
+      flex-grow: 1; }
+
+footer {
+  min-height: auto !important;
+  background-color: red; }
+  footer h5 {
+    padding-top: 40px;
+    font-weight: bold;
+    color: #ccc; }
+  footer ul {
+    padding-inline-start: 0; }
+  footer li {
+    list-style-type: none;
+    margin-bottom: 0 !important; }
+    footer li a {
+      font-size: 15px;
+      color: #ccc; }
 
 .td-sidebar-nav {
   padding-right: 0.5rem;
