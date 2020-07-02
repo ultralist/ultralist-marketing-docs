@@ -1,6 +1,6 @@
 {{ $cover := .HasShortcode "blocks/cover" }}
 <nav class="js-navbar-scroll navbar navbar-expand navbar-light {{ if $cover}} td-navbar-cover {{ end }}flex-column flex-md-row td-navbar">
-    <a class="navbar-brand" href="https://ultralist.io">
+  <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
 		<span class="brand-name">Ultralist</span>
 	</a>
   <div class="nav-links-holder d-none d-sm-block">
