@@ -12674,7 +12674,6 @@ footer {
     visibility: hidden; } }
 
 #marketing h1 {
-  padding-bottom: 20px;
   font-size: 42px;
   font-weight: 600;
   text-align: center; }
@@ -12689,7 +12688,10 @@ footer {
   padding-bottom: 40px; }
 
 #marketing .hero {
-  padding-top: 30px; }
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 #marketing #workflow {
   padding-top: 30px;
