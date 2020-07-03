@@ -12722,8 +12722,7 @@ footer {
   padding-left: 50px; }
 
 #marketing #word-of-mouth-img {
-  border-right: 1px solid #ccc;
-  padding-right: 50px; }
+  padding-left: 40px; }
 
 #marketing .browser-holder {
   width: 100%;
@@ -12785,18 +12784,13 @@ footer {
 #marketing .left-border {
   border-left: 1px solid #ccc; }
 
+#marketing .right-border {
+  border-right: 1px solid #ccc; }
+
 #marketing .pro-desc {
   padding-bottom: 30px; }
-  #marketing .pro-desc img {
-    max-width: 200px;
-    padding-right: 20px; }
-  #marketing .pro-desc .box {
-    text-align: center;
-    padding-bottom: 40px; }
-    #marketing .pro-desc .box .box-content {
-      display: flex;
-      flex-direction: row;
-      align-items: center; }
+  #marketing .pro-desc .box-content {
+    padding-top: 20px; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
