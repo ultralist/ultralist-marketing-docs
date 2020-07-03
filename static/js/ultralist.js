@@ -1,11 +1,15 @@
 const Ultralist = {
   //8      [ ]     tomorrow        +devops have
 
-  format: (id, due, subject) => {
+  format: (id, due, subject, completed) => {
     let ret = ""
 
     ret += `<span class="base0A">${Ultralist.addSpaces(id.toString(), 7)}</span>`
-    ret += Ultralist.addSpaces("[ ]", 8)
+    if (completed) {
+      ret += Ultralist.addSpaces("[x]", 8)
+    } else {
+      ret += Ultralist.addSpaces("[ ]", 8)
+    }
     ret += `<span class="base0D">${Ultralist.addSpaces(due, 16)}</span>`
     ret += Ultralist.formatSubject(subject)
 

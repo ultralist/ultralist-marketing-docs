@@ -39,10 +39,10 @@ linkTitle: "Index"
 
   <div id="workflow">
     <div class="container">
-      <div class="row">
+      <h1>A workflow that works for you.</h1>
+      <h2>Ultralist is based upon <a href="https://en.wikipedia.org/wiki/Getting_Things_Done">Getting Things Done.</a></h2>
+      <div class="row py-5">
         <div class="col-md-12 col-lg-6">
-          <h1>A workflow that works for you.</h1>
-          <h2>Ultralist is based upon <a href="https://en.wikipedia.org/wiki/Getting_Things_Done">Getting Things Done.</a></h2>
           <ul>
             <li>
               <i class="fa fa-check"> </i>
@@ -65,9 +65,14 @@ linkTitle: "Index"
               <p>Ultralist uses a well-documented simple json structure for storing todos.</p>
             </li>
         </div>
-        <div class="col-md-12 col-lg-6 d-none d-lg-block">
-          <img id="hacker-img" src="/images/hacker.svg" />
+        <div class="col-md-12 col-lg-6 d-none d-lg-block left-border">
+          <img class="callout-img" src="/images/hacker.svg" />
         </div>
+      </div>
+
+      <div class="text-center">
+        <button class="btn">Install Ultralist</button>
+        <button class="btn">Read the docs</button>
       </div>
     </div>
   </div>
@@ -75,43 +80,76 @@ linkTitle: "Index"
   <div class="container">
     <h1>Ultralist Pro: the ultimate add-on for professionals.</h1>
     <h2>Compliment the Ultralist CLI by going pro.</h2>
-    <p class="text-center">Ultralist pro enhances the CLI by adding integrations you already work with, sync across multiple computers, and more.</p>
+
+    <div class="browser-holder">
+      <div class="browser">
+        <div class="header-row">
+          <div class="column left">
+            <span class="dot" style="background:#ED594A;"></span>
+            <span class="dot" style="background:#FDD800;"></span>
+            <span class="dot" style="background:#5AC05A;"></span>
+          </div>
+          <div class="column middle">
+            <input type="text" value="https://app.ultralist.io">
+          </div>
+          <div class="column right">
+            <div style="float:right">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <img src="/images/browser.png" />
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center pro-desc">Ultralist pro enhances the CLI by adding integrations you already work with, sync across multiple computers, and more.</p>
+
+    <div class="pro-desc">
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <div class="box-content">
+            <h3>Works where you already work.</h3>
+            <p>Integrates with <strong>Slack</strong>, <strong>Basecamp</strong>, <strong>Github</strong>, and more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="row">
-      <div class="col-xs-12 col-sm-6 d-none d-sm-block">
+      <div class="col-12">
+        <div class="box">
+          <h3>Manage your list from anywhere.</h3>
+          <p>Access and edit your lists from your <strong>browser</strong> and <strong>phone</strong>.</p>
+        </div>
+        <div class="box">
+          <h3>Seamless sync.</h3>
+          <p>Sync your lists across multiple computers.</p>
+        </div>
+        <div class="box">
+          <h3>Powerful API.</h3>
+          <p>Customize your workflow, or sync with a service you use.</p>
+        </div>
       </div>
-      <div class="col-xs-12 col-sm-6">
-        <h3>Works where you already work.</h1>
-        <p>Integrates with Slack, Basecamp, Github, and more.</p>
-      </div>
-      <div class="text-center col-xs-12 col-sm-6">
-        <h3>Seamless sync.</h3>
-        <p>Sync your lists across multiple computers.</p>
-      </div>
+    </div>
+
+    <div class="text-center">
+      <a href="https://app.ultralist.io/signup" class="btn btn-lg btn-primary">Sign up in 5 seconds</a>
     </div>
   </div>
 
   <div class="container">
-    <div class="browser">
-      <div class="header-row">
-        <div class="column left">
-          <span class="dot" style="background:#ED594A;"></span>
-          <span class="dot" style="background:#FDD800;"></span>
-          <span class="dot" style="background:#5AC05A;"></span>
-        </div>
-        <div class="column middle">
-          <input type="text" value="https://app.ultralist.io">
-        </div>
-        <div class="column right">
-          <div style="float:right">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </div>
+    <h1>Loved by hundreds of engineers worldwide.</h1>
+    <div class="row">
+      <div class="col-md-12 col-lg-6 d-none d-lg-block">
+        <img id="word-of-mouth-img" class="callout-img" src="/images/word_of_mouth.svg" />
       </div>
-
-      <div class="content">
-        <img src="/images/browser.png" />
+      <div class="col-md-12 col-lg-6">
+        <p>asdf</p>
       </div>
     </div>
   </div>
@@ -122,10 +160,91 @@ linkTitle: "Index"
 
   const cli = new DemoCLI("#cli-demo")
   const l = (async () => {
-    cli.printPrompt()
-    await cli.type("ultralist l by context")
-    cli.enterKey()
-    cli.println(Ultralist.formatHeading("No Contexts"))
-    cli.println(Ultralist.format(6,"", "+security update to latest version of securitrex 0.4"))
+    while (true) {
+      cli.reset()
+      cli.printPrompt()
+      await cli.type("ultralist l by context")
+      cli.enterKey()
+      cli.println(Ultralist.formatHeading("No Contexts"))
+      cli.println(Ultralist.format(6,"", "+security update to latest version of securitrex 0.4"))
+      cli.println(Ultralist.formatOverdue(7,"Wed Feb 20", "+security get latest hackerone report"))
+      cli.println(Ultralist.format(2,"today", "+mobile test newest changes in AWS device farm"))
+      cli.println(Ultralist.format(1,"today", "+mobile upgrade CircleCI for mobile app pipeline"))
+      cli.println(Ultralist.format(8,"tomorrow", "+devops have my reserved instances sold?"))
+      cli.println(Ultralist.formatHeading("bob"))
+      cli.println(Ultralist.format(10,"tomorrow", "+devops make @bob a sysadmin")),
+      cli.println(Ultralist.formatHeading("george")),
+      cli.println(Ultralist.format(4,"Tue Feb 26", "+mobile +ux talk about mobile login screen with @george")),
+      cli.println(Ultralist.formatOverdue(9,"Fri Feb 15", "+devops ping @mike about flaky EC2 instance")),
+      cli.println(Ultralist.format(3,"tomorrow", "+mobile +security ask @mike about security updates")),
+      cli.printPrompt()
+      await cli.wait(6000)
+
+      cli.reset()
+
+      cli.printPrompt()
+      await cli.type("ultralist l by project")
+      cli.println(Ultralist.formatHeading("devops")),
+      cli.println(Ultralist.formatOverdue(9,"Fri Feb 15", "+devops ping @mike about flaky EC2 instance"))
+      cli.println(Ultralist.format(8,"tomorrow", "+devops have my reserved instances sold?"))
+      cli.println(Ultralist.formatHeading("mobile"))
+      cli.println(Ultralist.format(2,"today", "+mobile test newest changes in AWS device farm"))
+      cli.println(Ultralist.format(1,"today", "+mobile upgrade CircleCI for mobile app pipeline"))
+      cli.println(Ultralist.format(3,"tomorrow", "+mobile +security ask @mike about security updates"))
+      cli.println(Ultralist.format(4,"Tue Feb 26", "+mobile +ux talk about mobile login screen with @george"))
+      cli.println(Ultralist.formatHeading("security"))
+      cli.println(Ultralist.format(6,"", "+security update to latest version of securitrex 0.4"))
+      cli.println(Ultralist.formatOverdue(7,"Wed Feb 20", "+security get latest hackerone report"))
+      cli.println(Ultralist.format(3,"tomorrow", "+mobile +security ask @mike about security updates"))
+      cli.println(Ultralist.formatHeading("ux"))
+      cli.println(Ultralist.format(4,"Tue Feb 26", "+mobile +ux talk about mobile login screen with @george"))
+      cli.printPrompt()
+      await cli.wait(6000)
+
+      cli.reset()
+
+      cli.printPrompt()
+      await cli.type("ultralist c 2")
+      cli.enterKey()
+      cli.println("Todo 2 completed.")
+      cli.printPrompt()
+      await cli.wait(3000)
+
+      await cli.type("ultralist l completed tod")
+      cli.enterKey()
+      cli.println(Ultralist.format(2,"today", "+mobile test newest changes in AWS device farm", true))
+      cli.printPrompt()
+      await cli.wait(3000)
+
+      await cli.type("ultralist ar 5")
+      cli.enterKey()
+      cli.println("Todo 5 archived.")
+      cli.printPrompt()
+      await cli.wait(3000)
+
+      await cli.type("ultralist l due tom")
+      cli.enterKey()
+      cli.println(Ultralist.format(3,"tomorrow", "+mobile +security ask @mike about security updates"))
+      cli.println(Ultralist.format(8,"tomorrow", "+devops have my reserved instances sold?"))
+      cli.printPrompt()
+      await cli.wait(3000)
+
+      cli.reset()
+      cli.printPrompt()
+
+      await cli.type("ultralist a +devops make @bob a sysadmin due tom")
+      cli.enterKey()
+      cli.println("Todo added.")
+      cli.printPrompt()
+      await cli.wait(3000)
+
+      await cli.type("ultralist l +devops")
+      cli.enterKey()
+      cli.println(Ultralist.formatHeading("devops"))
+      cli.println(Ultralist.format(3,"tomorrow", "+mobile +security ask @mike about security updates"))
+      cli.println(Ultralist.format(8,"tomorrow", "+devops make @bob a sysadmin"))
+      cli.printPrompt()
+      await cli.wait(3000)
+    }
   })()
 </script>

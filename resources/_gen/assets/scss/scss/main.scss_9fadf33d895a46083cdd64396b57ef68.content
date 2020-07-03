@@ -12696,6 +12696,8 @@ footer {
   background-color: #f8f9fa;
   border-top: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea; }
+  #marketing #workflow .row {
+    align-items: center; }
 
 #marketing ul {
   padding-top: 30px; }
@@ -12709,16 +12711,31 @@ footer {
       border-radius: 100%;
       max-height: 20px; }
 
-#marketing #hacker-img {
-  border-left: 1px solid #ccc;
-  padding-left: 50px;
+#marketing .callout-img {
   width: 100%;
   max-width: 500px; }
+
+#marketing #hacker-img {
+  border-left: 1px solid #ccc;
+  padding-left: 50px; }
+
+#marketing #word-of-mouth-img {
+  border-right: 1px solid #ccc;
+  padding-right: 50px; }
+
+#marketing .browser-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px; }
 
 #marketing .browser {
   border: 3px solid #f1f1f1;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px; }
+  @media only screen and (min-width: 1200px) {
+    #marketing .browser {
+      max-width: 75%; } }
   #marketing .browser .header-row {
     padding: 10px;
     background: #f1f1f1;
@@ -12762,6 +12779,22 @@ footer {
     display: block; }
   #marketing .browser .content img {
     max-width: 100%; }
+
+#marketing .left-border {
+  border-left: 1px solid #ccc; }
+
+#marketing .pro-desc {
+  padding-bottom: 30px; }
+  #marketing .pro-desc img {
+    max-width: 200px;
+    padding-right: 20px; }
+  #marketing .pro-desc .box {
+    text-align: center;
+    padding-bottom: 40px; }
+    #marketing .pro-desc .box .box-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
