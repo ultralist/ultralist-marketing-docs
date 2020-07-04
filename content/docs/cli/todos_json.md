@@ -1,12 +1,13 @@
 ---
-id: todos_json
-title: The .todos.json file format
-sidebar_label: The .todos.json file format
+title: "The .todos.json file format"
+weight: 7
 ---
 
-## `.todos.json` file format
+Ultralist stores todos in a very simple, self-explanatory format.
 
-`ultralist` stores todos in a very simple, self-explanatory format.
+`.todos.json` is stored in the directory you ran `ultralist init` in.  If the ultralist binary does not see a `.todos.json` in your current directory, it will try to read the `.todos.json` from your home directory.
+
+### .todos.json example
 
 ```json
 [

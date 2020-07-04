@@ -1,7 +1,6 @@
 ---
-id: api
 title: The Ultralist.io API
-sidebar_label: Ultralist.io API
+weight: 3
 ---
 
 Welcome to the Ultralist API!   You can use our API to fully customize your workflow.

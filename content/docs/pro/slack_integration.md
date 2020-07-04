@@ -1,7 +1,6 @@
 ---
-id: slack_integration
 title: Ultralist Slack integration
-sidebar_label: Slack integration
+weight: 2
 ---
 
 Ultralist's aim is to integrate with the tools you already work with.  With our Slack integration you can:

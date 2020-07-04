@@ -1,7 +1,7 @@
 ---
-id: ultralist_pro
 title: Ultralist.io webapp
-sidebar_label: Ultralist.io webapp
+type: docs
+weight: 1
 ---
 
 the ultralist.io webapp

@@ -1,7 +1,8 @@
 ---
-id: best_practices
-title: Best practices when using Ultralist
-sidebar_label: Best practices
+title: "Best practices"
+weight: 5
+description: >
+  Best practices when using Ultralist CLI
 ---
 
 Ultralist is a simple tool, and your success using it is quite dependent on _how_ you use it.  This is true for _any_ task management sytem.

@@ -1,7 +1,7 @@
 ---
 title: "CLI"
 linkTitle: "CLI"
-weight: 1
+weight: 2
 
 description: >
   How the Ultralist CLI works.

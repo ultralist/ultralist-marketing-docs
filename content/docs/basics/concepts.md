@@ -1,7 +1,9 @@
 ---
-id: concepts
-title: Ultralist concepts
-sidebar_label: Concepts
+title: "Ultralist Concepts"
+weight: 1
+
+description: >
+  How Ultralist works conceptually.
 ---
 
 Since Ultralist implements a version of Getting Things Done, it has similar concepts:
@@ -45,3 +47,4 @@ You can prioritize a todo.  This will make it show as bold in the CLI, and denot
 ## Archiving
 
 Once todos are completed, you can archive them.  They won't show up anymore when listing todos.
+

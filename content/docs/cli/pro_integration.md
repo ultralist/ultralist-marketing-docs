@@ -1,7 +1,6 @@
 ---
-id: pro
-title: Syncing with Ultralist Pro
-sidebar_label: Syncing with Ultralist Pro
+title: "Syncing with Ultralist Pro"
+weight: 6
 ---
 
 Enabling **Ultralist Pro** will enable seamless sync with ultralist.io.  This allows you to:
