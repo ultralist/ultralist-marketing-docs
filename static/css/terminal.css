@@ -17,7 +17,7 @@
 }
 
 .terminal {
-    min-height: 450px;
+    height: 450px;
     margin-bottom: 40px;
     margin-top: 40px;
     background: var(--color-bg);
