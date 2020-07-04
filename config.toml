@@ -14,11 +14,11 @@ copyright = "Ultralist LLC"
   weight = 1
 [[menu.main]]
   name = "Docs"
-  url = "https://ultralist.io/docs"
+  url = "/docs/cli/quickstart"
   weight = 2
 [[menu.main]]
   name = "Pro Pricing"
-  url = "https://ultralist.io/pricing"
+  url = "/pricing"
   weight = 3
 
 
