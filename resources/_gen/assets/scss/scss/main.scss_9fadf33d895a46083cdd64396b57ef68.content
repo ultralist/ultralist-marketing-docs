@@ -12673,124 +12673,166 @@ footer {
     height: 5rem;
     visibility: hidden; } }
 
-#marketing h1 {
-  font-size: 42px;
-  font-weight: 600;
-  text-align: center; }
-
-#marketing h2 {
-  font-size: 22px;
-  color: #999;
-  text-align: center; }
-
-#marketing .container {
-  padding-top: 40px;
-  padding-bottom: 40px; }
-
-#marketing .hero {
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-#marketing #workflow {
-  padding-top: 30px;
-  background-color: #f8f9fa;
-  border-top: 1px solid #eaeaea;
-  border-bottom: 1px solid #eaeaea; }
-  #marketing #workflow .row {
-    align-items: center; }
-
-#marketing ul {
-  padding-top: 30px; }
-  #marketing ul li {
+#marketing {
+  background-color: #ffffff; }
+  #marketing h1 {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center; }
+  #marketing h2 {
+    font-size: 22px;
+    color: #999;
+    text-align: center; }
+  #marketing .container {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  #marketing .hero {
+    padding-top: 30px;
     display: flex;
-    list-style-type: none; }
-    #marketing ul li i {
-      font-size: 20px;
-      padding: 5px;
-      margin-right: 15px;
-      border-radius: 100%;
-      max-height: 20px; }
-
-#marketing .callout-img {
-  width: 100%;
-  max-width: 500px; }
-
-#marketing #hacker-img {
-  border-left: 1px solid #ccc;
-  padding-left: 50px; }
-
-#marketing #word-of-mouth-img {
-  padding-left: 40px; }
-
-#marketing .browser-holder {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 40px; }
-
-#marketing .browser {
-  border: 3px solid #f1f1f1;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px; }
-  @media only screen and (min-width: 1200px) {
-    #marketing .browser {
-      max-width: 75%; } }
-  #marketing .browser .header-row {
-    padding: 10px;
-    background: #f1f1f1;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    min-height: 45px; }
-  #marketing .browser .column {
-    float: left; }
-  #marketing .browser .left {
-    width: 15%; }
-  #marketing .browser .right {
-    width: 10%; }
-  #marketing .browser .middle {
-    width: 75%; }
-  #marketing .browser .row:after {
-    content: "";
-    display: table;
-    clear: both; }
-  #marketing .browser .dot {
-    margin-top: 4px;
-    height: 12px;
-    width: 12px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block; }
-  #marketing .browser input[type=text] {
+    flex-direction: column;
+    align-items: center; }
+  #marketing #workflow {
+    padding-top: 30px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea; }
+    #marketing #workflow .row {
+      align-items: center; }
+  #marketing ul {
+    padding-top: 30px; }
+    #marketing ul li {
+      display: flex;
+      list-style-type: none; }
+      #marketing ul li i {
+        font-size: 20px;
+        padding: 5px;
+        margin-right: 15px;
+        border-radius: 100%;
+        max-height: 20px; }
+  #marketing .callout-img {
     width: 100%;
-    font-size: 14px;
-    border-radius: 3px;
-    border: none;
-    background-color: white;
-    margin-top: -8px;
-    height: 25px;
-    color: #666;
-    padding: 5px; }
-  #marketing .browser .bar {
-    width: 17px;
-    height: 3px;
-    background-color: #aaa;
-    margin: 3px 0;
-    display: block; }
-  #marketing .browser .content img {
-    max-width: 100%; }
+    max-width: 500px; }
+  #marketing #hacker-img {
+    border-left: 1px solid #ccc;
+    padding-left: 50px; }
+  #marketing #word-of-mouth-img {
+    padding-left: 40px; }
+  #marketing .browser-holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px; }
+  #marketing .browser {
+    border: 3px solid #f1f1f1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; }
+    @media only screen and (min-width: 1200px) {
+      #marketing .browser {
+        max-width: 75%; } }
+    #marketing .browser .header-row {
+      padding: 10px;
+      background: #f1f1f1;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      min-height: 45px; }
+    #marketing .browser .column {
+      float: left; }
+    #marketing .browser .left {
+      width: 15%; }
+    #marketing .browser .right {
+      width: 10%; }
+    #marketing .browser .middle {
+      width: 75%; }
+    #marketing .browser .row:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #marketing .browser .dot {
+      margin-top: 4px;
+      height: 12px;
+      width: 12px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block; }
+    #marketing .browser input[type=text] {
+      width: 100%;
+      font-size: 14px;
+      border-radius: 3px;
+      border: none;
+      background-color: white;
+      margin-top: -8px;
+      height: 25px;
+      color: #666;
+      padding: 5px; }
+    #marketing .browser .bar {
+      width: 17px;
+      height: 3px;
+      background-color: #aaa;
+      margin: 3px 0;
+      display: block; }
+    #marketing .browser .content img {
+      max-width: 100%; }
+  #marketing .left-border {
+    border-left: 1px solid #ccc; }
+  #marketing .right-border {
+    border-right: 1px solid #ccc; }
+  #marketing .pro-desc {
+    padding-bottom: 30px; }
+    #marketing .pro-desc .box-content {
+      padding-top: 20px; }
 
-#marketing .left-border {
-  border-left: 1px solid #ccc; }
-
-#marketing .right-border {
-  border-right: 1px solid #ccc; }
-
-#marketing .pro-desc {
-  padding-bottom: 30px; }
-  #marketing .pro-desc .box-content {
+#pricing {
+  padding-bottom: 40px; }
+  #pricing h1 {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center; }
+  #pricing .container {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  #pricing .pricing-columns {
     padding-top: 20px; }
+  #pricing .hero {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #pricing .pricing-column {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem; }
+    #pricing .pricing-column a {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      min-width: 170px; }
+    #pricing .pricing-column h3 {
+      text-align: center; }
+    #pricing .pricing-column > p {
+      text-align: center;
+      color: #aaa; }
+    #pricing .pricing-column ul {
+      padding-inline-start: 0; }
+    #pricing .pricing-column li {
+      list-style-type: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px solid #eee;
+      display: flex;
+      flex-direction: row; }
+      #pricing .pricing-column li:first-child {
+        border-top: none; }
+      #pricing .pricing-column li i {
+        padding-top: 15px;
+        padding-right: 15px; }
+      #pricing .pricing-column li p {
+        margin-top: 10px;
+        margin-bottom: 10px; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;

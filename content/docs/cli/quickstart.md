@@ -5,9 +5,6 @@ weight: 1
 description: >
   How to quickly get started with the Ultralist CLI.
 ---
-menu:
-  main:
-    weight: 1
 The Ultralist CLI is a simple and very fast task management system for the command-line.  It is rooted in the [Getting Things Done](https://gettingthingsdone.com/what-is-gtd/) philosophy, popularized by David Allen.  I am a huge fan of GTD and I use it every day.  I was looking for a lightweight task management system that I could use somewhere where I am all the time - the terminal!  Thus, Ultralist was born.
 
 Ultralist is easy to understand, is open-source, and follows the [unix philosphy](https://en.wikipedia.org/wiki/Unix_philosophy) of being a simple tool that does one job very well.
