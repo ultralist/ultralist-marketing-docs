@@ -4,6 +4,8 @@ title = "Ultralist docs"
 pygmentsUseClasses=true
 theme = "docsy"
 
+github_repo = "https://github.com/ultralist/ultralist-hugo-docs"
+
 [params]
 copyright = "Ultralist LLC"
 
