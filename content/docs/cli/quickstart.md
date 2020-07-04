@@ -28,7 +28,7 @@ Simply run `go get github.com/ultralist/ultralist`.
 
 #### 1. Create a new list in a directory
 
-```shell
+```
 ➜ ultralist init
 ```
 
@@ -37,14 +37,14 @@ The above will create a `.todos.json` file in the directory you're in.
 
 #### 2. Add a task to your list.
 
-```shell
+```
 ➜ ultralist add some important task for the +project due tom
 todo 1 added.
 ```
 
 Then, show the task you just added:
 
-```shell
+```
 ➜ ultralist list
 all
 1  [ ]  tomorrow    some important task
@@ -54,14 +54,14 @@ all
 
 Once you've completed your task, mark it completed:
 
-```shell
+```
 ➜ ultralist c 1
 todo completed.
 ```
 
 Then, list your tasks again.  You'll see the task has been marked as completed:
 
-```shell
+```
 ➜ ultralist l
 all
 1  [x]  tomorrow    some important task
@@ -71,7 +71,7 @@ all
 
 At the end of the day, reflect upon how amazingly productive you were, and archive your completed task.
 
-```shell
+```
 ➜ ultralist ar 1
 todo archived.
 ```

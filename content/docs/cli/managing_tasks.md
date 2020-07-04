@@ -27,7 +27,7 @@ For specific dates, you can use either `due may 2` or `due 2 may`. The month is 
 
 ##### Examples
 
-```shell
+```
 ultralist add chat with @bob about +specialProject due tom
 ultralist a +lunch make turkey sandwich
 ultralist a +task respond to @shelly about project status due may 3
@@ -40,7 +40,7 @@ ultralist a +task respond to @shelly about project status due may 3
 
 ##### Examples
 
-```shell
+```
 ultralist complete 35
 ultralist c 35
 ultralist c --revert 35
@@ -54,7 +54,7 @@ ultralist c --revert 35
 
 ##### Examples
 
-```shell
+```
 ultralist archive 35
 ultralist ar 35
 ultralist ar --revert 35
@@ -68,7 +68,7 @@ ultralist ar c
 
 ##### Examples
 
-```shell
+```
 ultralist prioritize 35
 ultralist p 35
 ultralist p --revert 35
@@ -80,7 +80,7 @@ ultralist p --revert 35
 
 **Examples**
 
-```shell
+```
 ultralist delete 35
 ultralist d 35
 ```
@@ -99,7 +99,7 @@ When if you do not include `due [date]`, then just the subject will be edited.
 
 **Example**
 
-```shell
+```
 ultralist e 3 chat with @bob
 ```
 
@@ -109,7 +109,7 @@ The above will edit just the todo's subject, and leave the due date alone.
 
 If you only pass `due [date]`, the todo's due date will be updated, and the subject will remain the same.
 
-```shell
+```
 ultralist e 3 due tom
 ```
 The above will set the todo item with id of `3`'s due date to tomorrow, and it will leave the subject alone. 
@@ -120,7 +120,7 @@ You can also say `due none` to un-set an existing due date.
 
 **Example**
 
-```shell
+```
 ultralist e 3 due none
 ```
 
@@ -136,14 +136,14 @@ Add a note to a task with the following syntax:
 or
 `ultralist a n <todoId> <content>`
 
-```shell
+```
 ➜ ultralist a n 1 here is a note
 Note added.
 ```
 
 Then you can list your todos with notes by using `ultralist list notes` or `ultralist l n`
 
-```shell
+```
 ➜ ultralist l n
 
 all
@@ -167,7 +167,7 @@ or
 
 **Example**
 
-```shell
+```
 ➜ ultralist e n 1 0 here is the updated note content.
 Note edited.
 ```
@@ -183,7 +183,7 @@ or
 
 **Example**
 
-```shell
+```
 ➜ ultralist d n 1 0
 Note deleted.
 ```

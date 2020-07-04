@@ -15,7 +15,7 @@ Enabling **Ultralist Pro** will enable seamless sync with ultralist.io.  This al
 
 If you don't already have an account, run `ultralist auth` to create one, and tell ultralist to sync.
 
-```shell
+```
 ➜ ultralist auth
 Head to your browser to complete authorization steps.
 Listening for response...
@@ -33,7 +33,7 @@ If you already have an account, you'll still need to enable synchronization by r
 
 You can check the status of your authorization by running `ultralist auth check`.
 
-```shell
+```
 ➜ ultralist auth check
 Hello Bob! You are successfully authenticated.
 ```

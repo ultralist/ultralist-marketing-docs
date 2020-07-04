@@ -6,3 +6,15 @@ body {
   text-rendering: optimizeLegibility;
   line-height: 1.5;
 }
+
+.td-content {
+  img {
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+
+    @media only screen and (min-width: 800px) {
+      max-width: 75%;
+      margin-left: 15%;
+    }
+  }
+}

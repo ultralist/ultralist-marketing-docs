@@ -15,14 +15,14 @@ You can initialize a todolist by running `ultralist init`. This will create a `.
 
 Archive a single task:
 
-```shell
+```
 $ ultralist ar 9
 Todo archived.
 ```
 
 Or, archive all of your completed tasks:
 
-```shell
+```
 $ ultralist ar c
 All completed todos have been archived.
 ```

@@ -55,7 +55,7 @@ Todos can be grouped by project or context
 
 You can also list all of your task notes when listing.
 
-```shell
+```
 $ ultralist l notes agenda by p
 $ ultralist l n agenda by p
 ```

@@ -21,12 +21,12 @@ Once completed, you'll be redirected back to Ultralist, with a notification sayi
 
 Ultralist needs to know which Slack user is yours.  So the initial command you need to run in Slack is `/ul login`.  You'll get a screen like this:
 
-![](/img/slack_connect.png)
+![](/images/slack_connect.png)
 
 Click the **Connect account** button.  You'll be redirected to Ultralist.  From there, choose the primary list you'd like to use when interacting inside Slack.
 
 
-![](/img/slack_connect_2.png)
+![](/images/slack_connect_2.png)
 
 Once finished, you're good to use the slack integration!
 
