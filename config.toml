@@ -1,6 +1,6 @@
 baseURL = "https://docs.ultralist.io/"
 languageCode = "en-us"
-title = "Ultralist docs"
+title = "Ultralist: Amazing task management for tech folks."
 pygmentsUseClasses=true
 theme = "docsy"
 
