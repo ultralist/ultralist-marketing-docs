@@ -12321,8 +12321,7 @@ readers do not read off random characters that represent icons */
       flex-grow: 1; }
 
 footer {
-  min-height: auto !important;
-  background-color: red; }
+  min-height: auto !important; }
   footer h5 {
     padding-top: 40px;
     font-weight: bold;
@@ -12780,6 +12779,11 @@ footer {
     padding-bottom: 30px; }
     #marketing .pro-desc .box-content {
       padding-top: 25px; }
+  #marketing .testamonials {
+    padding-top: 40px; }
+    #marketing .testamonials .blockquote p {
+      font-style: italic;
+      font-size: 1.1rem; }
   #marketing .terminal {
     height: 450px;
     margin-bottom: 50px;
