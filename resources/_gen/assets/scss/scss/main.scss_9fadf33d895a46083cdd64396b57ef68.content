@@ -12779,7 +12779,7 @@ footer {
   #marketing .pro-desc {
     padding-bottom: 30px; }
     #marketing .pro-desc .box-content {
-      padding-top: 20px; }
+      padding-top: 25px; }
   #marketing .terminal {
     height: 450px;
     margin-bottom: 50px;
