@@ -178,15 +178,11 @@
 
   .terminal {
     @media only screen and (max-width: 1200px) {
-      .terminal {
-        width: 100%;
-      }
+      width: 100%;
     }
 
     @media only screen and (min-width: 1200px) {
-      .terminal {
-        width: 750px;
-      }
+      width: 750px;
     }
 
     height: 450px;
