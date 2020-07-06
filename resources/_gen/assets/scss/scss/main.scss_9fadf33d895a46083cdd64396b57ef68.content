@@ -12313,6 +12313,14 @@ readers do not read off random characters that represent icons */
     font-size: 40px; }
   .td-navbar .nav-links-holder {
     width: 100%; }
+    .td-navbar .nav-links-holder .navbar-nav {
+      display: flex; }
+      @media only screen and (max-width: 768px) {
+        .td-navbar .nav-links-holder .navbar-nav {
+          justify-content: space-between; } }
+      @media only screen and (min-width: 768px) {
+        .td-navbar .nav-links-holder .navbar-nav .nav-item {
+          padding-right: 20px; } }
   .td-navbar #main_navbar {
     display: flex;
     justify-content: space-between;
