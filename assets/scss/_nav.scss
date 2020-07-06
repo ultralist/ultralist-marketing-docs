@@ -4,7 +4,8 @@
 }
 .td-navbar {
   background: $navbar-background-color;
-  height: 65px;
+  padding-top: 0;
+  padding-bottom: 0;
 
   .brand-name {
     font-family: "Oxanium";

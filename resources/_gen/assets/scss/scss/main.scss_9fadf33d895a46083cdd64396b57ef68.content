@@ -12307,7 +12307,8 @@ readers do not read off random characters that represent icons */
 
 .td-navbar {
   background: "#fff";
-  height: 65px; }
+  padding-top: 0;
+  padding-bottom: 0; }
   .td-navbar .brand-name {
     font-family: "Oxanium";
     font-size: 40px; }
