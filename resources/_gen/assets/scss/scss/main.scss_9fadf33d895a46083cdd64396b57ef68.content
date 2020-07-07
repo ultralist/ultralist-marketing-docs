@@ -12309,9 +12309,15 @@ readers do not read off random characters that represent icons */
   background: "#fff";
   padding-top: 0;
   padding-bottom: 0; }
-  .td-navbar .brand-name {
-    font-family: "Oxanium";
-    font-size: 40px; }
+  .td-navbar .navbar-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .td-navbar .navbar-brand img {
+      max-height: 50px; }
+    .td-navbar .navbar-brand .brand-name {
+      font-family: "Oxanium";
+      font-size: 40px; }
   .td-navbar .nav-links-holder {
     width: 100%; }
     .td-navbar .nav-links-holder .navbar-nav {
