@@ -142,7 +142,7 @@ curl -X POST https://api.ultralist.io/api/v1/todo_lists \
         "subject": "Chat with @bob",
         "due": "2020-05-01",
         "completed": false,
-        "completdDate": null,
+        "completedDate": null,
         "isPriority": true,
         "archived": false,
         "notes": ["Bob is a great guy."]
@@ -152,7 +152,7 @@ curl -X POST https://api.ultralist.io/api/v1/todo_lists \
         "subject": "Push the build to the jenkins server",
         "due": "2020-05-03",
         "completed": false,
-        "completdDate": null,
+        "completedDate": null,
         "isPriority": false,
         "archived": false,
         "notes": []
