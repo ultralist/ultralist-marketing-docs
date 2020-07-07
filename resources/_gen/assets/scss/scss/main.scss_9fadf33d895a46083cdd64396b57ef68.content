@@ -12688,7 +12688,8 @@ footer {
     visibility: hidden; } }
 
 #marketing {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  margin-top: 10px; }
   #marketing h1 {
     font-size: 42px;
     font-weight: 600;
@@ -12701,7 +12702,7 @@ footer {
     padding-top: 40px;
     padding-bottom: 40px; }
   #marketing .hero {
-    padding-top: 30px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center; }
