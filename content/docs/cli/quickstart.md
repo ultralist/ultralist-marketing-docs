@@ -76,5 +76,4 @@ At the end of the day, reflect upon how amazingly productive you were, and archi
 todo archived.
 ```
 
-TCg8Bba923dAivhfet
 Contratulations, you've mastered about 70% of ultralist!  There are many more features to know.  Read on for a full breakdown.
