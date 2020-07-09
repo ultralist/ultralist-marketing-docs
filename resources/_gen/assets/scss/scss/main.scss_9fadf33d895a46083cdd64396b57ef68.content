@@ -12292,13 +12292,12 @@ readers do not read off random characters that represent icons */
   .td-content pre code {
     color: #f8f8f2;
     border: none;
-    padding: 10px; }
+    padding: 0; }
 
 .td-content code {
   color: #e01e5a;
   border: 1px solid #ddd;
   border-radius: 0.2rem;
-  padding: 2px 3px 1px;
   background-color: rgba(27, 31, 35, 0.05); }
 
 .nav-container {

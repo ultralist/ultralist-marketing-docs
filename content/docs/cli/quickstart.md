@@ -26,7 +26,7 @@ Simply run `go get github.com/ultralist/ultralist`.
 
 ### Create your first list
 
-#### 1. Create a new list in a directory
+#### 1. Create a new list in a directory.
 
 ```
 ➜ ultralist init
@@ -50,7 +50,7 @@ all
 1  [ ]  tomorrow    some important task
 ```
 
-#### 3. Mark your task completed
+#### 3. Mark your task completed.
 
 Once you've completed your task, mark it completed:
 
