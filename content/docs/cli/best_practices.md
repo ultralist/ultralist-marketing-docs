@@ -27,34 +27,42 @@ I keep many aliases handy:
 
 ```shell
 alias u="ultralist"
-alias uc="ultralist l agenda by context"
-alias up="ultralist l agenda by project"
-alias tod="ultralist l by project due tod"
-alias tom="ultralist l by project due tom"
-alias mon="ultralist l by project due mon"
-alias tue="ultralist l by project due tue"
-alias wed="ultralist l by project due wed"
-alias thu="ultralist l by project due thu"
-alias fri="ultralist l by project due fri"
-alias c="ultralist l completed tod"
+ alias uc="ultralist l agenda by context"
+ alias up="ultralist l agenda by project"
+ alias tod="ultralist l by project due tod"
+ alias tom="ultralist l by project due tom"
+ alias mon="ultralist l by project due mon"
+ alias tue="ultralist l by project due tue"
+ alias wed="ultralist l by project due wed"
+ alias thu="ultralist l by project due thu"
+ alias fri="ultralist l by project due fri"
+ alias c="ultralist l completed tod"
 ```
 
 Running `up` is _much_ easier than typing `ultralist l agenda by project` every time!
 
 
-### Show your ultralist every time you open a shell
+### Show your ultralist every time you open a shell.
 
 Some folks love to see their list every time they open a shell.  You can easily do that.
 
 In your `.zshrc` or `.bashrc`, simply add `ultralist list` to the bottom.
 
+### If you're using Ultralist Pro, sync your list with cron.
+
+Ultralist Pro can't connect to your local computer when your list changes.  The CLI needs to be manually synced.  But that isn't a problem.  In a unix system, there are tools for such matters.  Cron up your Ultralist to sync with the Pro backend on an interval of your choosing.
+
+```cron
+  */15 8-17 * * 1-5 cd ~/work && ultralist sync
+```
+
 ### Reflect on your completed tasks daily.
+
+You can show what you completed for the day by running the following:
 
 ```
 ultralist l completed tod
 ```
-
-You can show what you completed for the day by running the following:
 
 ### Archive completed stuff daily.
 
