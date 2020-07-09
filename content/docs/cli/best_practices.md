@@ -27,16 +27,16 @@ I keep many aliases handy:
 
 ```shell
 alias u="ultralist"
- alias uc="ultralist l agenda by context"
- alias up="ultralist l agenda by project"
- alias tod="ultralist l by project due tod"
- alias tom="ultralist l by project due tom"
- alias mon="ultralist l by project due mon"
- alias tue="ultralist l by project due tue"
- alias wed="ultralist l by project due wed"
- alias thu="ultralist l by project due thu"
- alias fri="ultralist l by project due fri"
- alias c="ultralist l completed tod"
+alias uc="ultralist l agenda by context"
+alias up="ultralist l agenda by project"
+alias tod="ultralist l by project due tod"
+alias tom="ultralist l by project due tom"
+alias mon="ultralist l by project due mon"
+alias tue="ultralist l by project due tue"
+alias wed="ultralist l by project due wed"
+alias thu="ultralist l by project due thu"
+alias fri="ultralist l by project due fri"
+alias c="ultralist l completed tod"
 ```
 
 Running `up` is _much_ easier than typing `ultralist l agenda by project` every time!
