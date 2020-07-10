@@ -5,7 +5,7 @@ description: >
   Learn how to list your tasks.
 ---
 
-* `ultralist list` or `ultralist l` - List all tasks.
+* `ultralist (list|l)` - List all tasks.
 
 ### Filtering tasks
 
