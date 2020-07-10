@@ -4,7 +4,7 @@ linkTitle: "CLI"
 weight: 2
 
 description: >
-  How the Ultralist CLI works.
+  How the open-source Ultralist CLI works.
 ---
 
-Below you'll find all documentation for the Ultralist CLI.
+Below you'll find all documentation for the [Ultralist CLI](https://github.com/ultralist/ultralist).
