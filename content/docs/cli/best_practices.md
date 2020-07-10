@@ -14,7 +14,7 @@ Ultralist will show overdue tasks first.  You should either complete these, chan
 ### Use the agenda.
 
 ```shell
-ultralist l agenda
+ultralist l due:agenda
 ```
 
 The agenda view is great, because it's the list you need to see 90% of the time.
@@ -27,19 +27,19 @@ I keep many aliases handy:
 
 ```shell
 alias u="ultralist"
-alias uc="ultralist l agenda by context"
-alias up="ultralist l agenda by project"
-alias tod="ultralist l by project due tod"
-alias tom="ultralist l by project due tom"
-alias mon="ultralist l by project due mon"
-alias tue="ultralist l by project due tue"
-alias wed="ultralist l by project due wed"
-alias thu="ultralist l by project due thu"
-alias fri="ultralist l by project due fri"
-alias c="ultralist l completed tod"
+alias uc="ultralist l due:agenda group:context"
+alias up="ultralist l due:agenda group:project"
+alias tod="ultralist l goup:project due:tod"
+alias tom="ultralist l goup:project due:tom"
+alias mon="ultralist l goup:project due:mon"
+alias tue="ultralist l goup:project due:tue"
+alias wed="ultralist l goup:project due:wed"
+alias thu="ultralist l goup:project due:thu"
+alias fri="ultralist l goup:project due:fri"
+alias c="ultralist l completed:tod"
 ```
 
-Running `up` is _much_ easier than typing `ultralist l agenda by project` every time!
+Running `up` is _much_ easier than typing `ultralist l due:agenda group:project` every time!
 
 
 ### Show your ultralist every time you open a shell.
@@ -61,7 +61,7 @@ Ultralist Pro can't connect to your local computer when your list changes.  The 
 You can show what you completed for the day by running the following:
 
 ```
-ultralist l completed tod
+ultralist l completed:tod
 ```
 
 ### Archive completed stuff daily.

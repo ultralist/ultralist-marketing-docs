@@ -5,59 +5,111 @@ description: >
   Learn how to list your tasks.
 ---
 
-* `ultralist list` or `ultralist l` - List all unarchived todos.
-* `ultralist l archived` - List archived todos.
+* `ultralist list` or `ultralist l` - List all tasks.
 
-By default, when listing todos, archived todos will be filtered out.  You must explicitly pass `l archived` to see archived todos.
+### Filtering tasks
 
-### Filtering todos by due date
+You can use filter criteria to show specific tasks.  Filter criteria is in the form of `thing:value`, much like [the syntax for filtering Github issues](https://docs.github.com/en/github/managing-your-work-on-github/using-search-to-filter-issues-and-pull-requests).
 
-Ultralist supports a variety of methods to show todos that are due on a certain date.
+Here are the following filters available:
 
-* `ultralist l due tod` - show all todos due today
-* `ultralist l due tom` - show all todos due tomorrow
-* `ultralist l due this week` - show all todos due this week
-* `ultralist l overdue` - show all todos that are overdue
-* `ultralist l due <mon|tue|wed|thu|fri|sat|sun>` - show todos due on a specific day, looking forward
 
-### The agenda view
+### Filtering by date
 
-* `ultralist l agenda` - Show all uncomplete todos due today or that are overdue.  It does not show todos due in the future.  This is a great view to use all the time!
+`due:(tod|today|tom|tomorrow|overdue|thisweek|nextweek|lastweek|mon|tue|wed|thu|fri|sat|sun|none)`
 
-### Listing completed todos
+**Examples**
 
-* `ultralist l completed tod` - show todos that were completed today
-* `ultralist l completed this week` - show todos that were completed this week
+* `ultralist l due:tod` - show tasks due today
+* `ultralist l due:tom` - show tasks due tomorrow
+* `ultralist l due:overdue` - show overdue tasks
+* `ultralist l due:agenda` - show tasks who's due date is today or earlier (overdue)
 
-### Listing todos by project or context
+Currently, only one `due` filter is allowed.
 
-* `ultralist l @pomodoro` - show all todos with a context of `@pomodoro`.
-* `ultralist l +project` - show all todos with a project of `+project`.
+### Filtering by completion status
+
+* `is:completed`
+* `not:completed`
+
+**Examples**
+
+* `ultralist l is:completed` - show only completed tasks
+* `ultralist l not:completed` - show only incomplete tasks
+
+### Filtering by priority status
+
+* `is:priority`
+* `not:priority`
+
+**Examples**
+
+* `ultralist l is:priority` - show only completed tasks
+* `ultralist l not:priority` - show only incomplete tasks
+
+### Filtering by archived status
+
+* `is:archived`
+* `not:archived` - note that this option is **implicitly added**!  Ultralist defaults to not showing archived tasks.
+
+**Examples**
+
+* `ultralist l is:archived` - show archived tasks
+
+### Filtering by completion date
+
+* `completed:(tod|today)`
+* `completed:thisweek`
+
+**Examples**
+
+* `ultralist l completed:tod` - show tasks that were completed today
+* `ultralist l completed:thisweek` - show tasks that were completed this week
+
+### Filtering by a project or context
+
+* `ultralist l @pomodoro` - show all tasks with a context of `@pomodoro`.
+* `ultralist l +project` - show all tasks with a project of `+project`.
 
 Remember, `ultralist` is a unix tool, just like any other.  You can use `grep` to combine a complex listing with a filter.
 
-Example: `ultralist l due tom | grep @bob`
+Example: `ultralist l due:tom | grep @bob`
 
 ### Grouping
 
-Todos can be grouped by project or context
+* `group:project`
+* `group:context`
 
-* `ultralist l by project` or `ultralist l by p` - List all todos, grouped by project. 
-* `ultralist l by context` or `ultralist l by c` - List all todos, grouped by context. 
+tasks can be grouped by project or context
 
-### Real world examples of combining groups and listing filters
-
-* `ultralist l agenda by project` - This is the command I run every day.  So often, in fact, I have an alias for it called `up`.
-* `ultralist l by project due tom` - Show all todos due tomorrow, and group them by project
-* `ultralist l completed tod` - Look back at all the todos you completed today, and feel good about yourself.
+* `ultralist l group:project` or `ultralist l group:p` - List all tasks, grouped by project. 
+* `ultralist l group:context` or `ultralist l group:c` - List all tasks, grouped by context. 
 
 ### Showing tasks with notes
 
-You can also list all of your task notes when listing.
+Use the `--notes` flag to show notes on tasks when listing.
 
 ```
-$ ultralist l notes agenda by p
-$ ultralist l n agenda by p
+$ ultralist l --notes due:agenda group:p
+$ ultralist l --notes due:agenda group:p
+```
+### Real world examples of combining groups and listing filters
+
+Below is the command I run every day.  So often, in fact, I have an alias for it called `up`:
+
+```
+ultralist l due:agenda group:project
 ```
 
-Simply change `list` or `l` to `list notes` or `l n`.  You'll see a list of notes for your tasks.
+Show all tasks due tomorrow, and group them by context:
+
+```
+ultralist l group:context due:tom
+```
+
+Look back at all the tasks you completed today, and feel good about yourself:
+
+```
+ultralist l completed:tod
+```
+

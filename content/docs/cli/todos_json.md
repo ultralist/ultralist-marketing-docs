@@ -1,6 +1,7 @@
 ---
 title: "The .todos.json file format"
 weight: 7
+description: A quick breakdown of how Ultralist stores tasks.
 ---
 
 Ultralist stores todos in a very simple, self-explanatory format.

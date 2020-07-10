@@ -1,6 +1,7 @@
 ---
 title: "Syncing with Ultralist Pro"
 weight: 6
+description: Set up the CLI to sync seamlessly with Ultralist Pro.
 ---
 
 Enabling **Ultralist Pro** will enable seamless sync with ultralist.io.  This allows you to:
