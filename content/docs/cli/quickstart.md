@@ -14,7 +14,7 @@ Ultralist is easy to understand, is open-source, and follows the [unix philosphy
 
 Ultralist is written in Go, which means it's ultra-portable.  It's already in many package managers.
 
-* **Mac OS**: `brew install ultralist`
+* **Mac OS**: `brew install ultralist` (for Homebrew) or `port install ultralist` (for MacPorts)
 * **Arch Linux**: `yay install ultralist`
 * **FreeBSD**: `pkg install ultralist`
 * **Other systems**: Get the correct ultralist binary by visiting the [releases page on Github](https://github.com/ultralist/ultralist/releases).
