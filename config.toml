@@ -27,25 +27,22 @@ copyright = "Ultralist LLC"
 [params.links]
 [[params.links.ultralist]]
 	name = "Pro Pricing"
-	url = "https://ultralist.io/pricing"
+	url = "/pricing"
 [[params.links.ultralist]]
 	name = "Download"
 	url = "https://github.com/ultralist/ultralist/releases"
 [[params.links.ultralist]]
 	name = "Docs"
-	url = "https://docs.ultralist.io"
+	url = "/docs"
 [[params.links.docs]]
 	name = "Quickstart"
-	url = "https://docs.ultralist.io/docs/quickstart"
+	url = "/docs/cli/quickstart"
 [[params.links.docs]]
 	name = "Ultralist Pro"
-	url = "https://docs.ultralist.io/docs/pro"
+	url = "/docs/pro"
 [[params.links.docs]]
 	name = "API docs"
-	url = "https://docs.ultralist.io/docs/api"
-[[params.links.more]]
-	name = "Blog"
-	url = "https://docs.ultralist.io/blog"
+	url = "/docs/pro/api"
 [[params.links.more]]
 	name = "Github"
 	url = "https://github.com/ultralist"
