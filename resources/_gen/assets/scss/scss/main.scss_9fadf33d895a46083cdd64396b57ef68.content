@@ -12822,8 +12822,16 @@ footer {
   #pricing .container {
     padding-top: 40px;
     padding-bottom: 40px; }
-  #pricing .pricing-columns {
-    padding-top: 20px; }
+  #pricing .pricing-holder {
+    display: flex;
+    width: 100%;
+    justify-content: center; }
+    #pricing .pricing-holder .pricing-columns {
+      content: center;
+      padding-top: 20px;
+      max-width: 750px; }
+      #pricing .pricing-holder .pricing-columns > div {
+        padding: 0; }
   #pricing .hero {
     padding-top: 30px;
     display: flex;

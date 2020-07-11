@@ -1,5 +1,4 @@
 #pricing {
-
   padding-bottom: 40px;
 
   h1 {
@@ -13,8 +12,20 @@
     padding-bottom: 40px;
   }
 
-  .pricing-columns {
-    padding-top: 20px;
+  .pricing-holder {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .pricing-columns {
+      content: center;
+      padding-top: 20px;
+      max-width: 750px;
+
+      > div {
+        padding: 0;
+      }
+    }
   }
 
   .hero {
