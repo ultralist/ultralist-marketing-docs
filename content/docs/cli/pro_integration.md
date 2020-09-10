@@ -43,31 +43,31 @@ Hello Bob! You are successfully authenticated.
 
 There are a couple of ways to sync a list, depending if that list already exists or not.
 
-### Creating a brand new list and setting it up to sync
-
-1. Ensure you're authenticated via `ultralist auth check`.
-2. Create the list via `ultralist init`.
-3. Ultralist will ask if you want to sync this list with ultralist.io. You can say `y`, and it will prompt you about which existing list you'd like to sync with, or to create a new list.
-4. Select `New list...` and give it a name.
-5. Presto, this new list is set up to sync with ultralist.io.
-
-
 ### Syncing a list that already exists locally, but not on ultralist.io
 
 1. Ensure you're authenticated via `ultralist auth check`.
-2. Run `ultralist sync`. You will be prompted to give the list a name.
-3. Presto, this list is now set up to sync with ultralist.io.
+1. Run `ultralist sync --setup`.  It will ask you if you'd like to sync this list, or import an existing list from ultralist.io.
+1. Presto, this list is now set up to sync with ultralist.io.
 
 ### Syncing a list that exists on ultralist.io, but not locally
 
 1. Ensure you're authenticated via `ultralist auth check`.
-2. In a directory that does not already have a .todos.json file, run `ultralist init`.
-3. Ultralist will ask you if you want to sync this list with ultralist.io. Enter `y`.
-4. Choose the existing list you'd like to sync with.
-5. Presto, the list will automatically be downloaded locally and will be set up to sync.
+1. In a directory of your choosing, run `ultralist sync --setup`.  It will ask you if you'd like to sync this list, or import an existing list from ultralist.io.
+1. Choose "Pull a list from ultralist.io, replacing the list that's here", and then choose the remote list you'd like to sync.
+1. Presto, this list is now set up to sync with ultralist.io.
 
-### Pulling changes locally from a list that has changed on ultralist.io
+## Staying in sync
+
+Keeping your lists in sync with ultralist.io is very straightforward.
+
+**Pulling remote changes locally**
 
 Local lists managed by the CLI don't have a native way of knowing if a list has changed remotely on ultralist.io.
 
-Run `ultralist sync` to synchronize your local list with ultralist.io.
+Run `ultralist sync` to synchronize your local list with ultralist.io.  You can also set up a cron job to sync your list, if you want to keep it always up-to-date.
+
+**Pushing local changes to ultralist.io**
+
+Normally this does not need to occur.  Whenever you make changes to your local list, a sync to ultralist.io will automatically occur in the background, as a background process.  In the case where you don't have internet access, changes to your local list will be stored in a buffer.
+
+Running `ultralist sync` is a bi-directional sync, so changes are both pulled _and_ pushed, and reconciliation logic happens on the ultralist.io backend.
