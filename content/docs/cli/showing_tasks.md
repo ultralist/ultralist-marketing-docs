@@ -13,48 +13,51 @@ You can use filter criteria to show specific tasks.  Filter criteria is in the f
 
 Here are the following filters available:
 
+* `due`
+* `duebefore`
+* `dueafter`
+* `completed`
+* `priority`
+* `archived`
+* `status`
+* `project`
+* `context`
+
 
 ### Filtering by date
 
-`due:(tod|today|tom|tomorrow|overdue|thisweek|nextweek|lastweek|mon|tue|wed|thu|fri|sat|sun|none)`
+`due:(tod|today|tom|tomorrow|overdue|thisweek|nextweek|lastweek|mon|tue|wed|thu|fri|sat|sun|none|<specific date>)`
 
 **Examples**
 
 * `ultralist l due:tod` - show tasks due today
-* `ultralist l due:tom` - show tasks due tomorrow
-* `ultralist l due:overdue` - show overdue tasks
-* `ultralist l due:agenda` - show tasks who's due date is today or earlier (overdue)
+* `ultralist l duebefore:tom` - show tasks due before tomorrow (today and earlier)
+* `ultralist l dueafter:tod` - show tasks due after today
 
 Currently, only one `due` filter is allowed.
 
-### Filtering by completion status
+### Filtering tasks by completion or priority
 
-* `is:completed`
-* `not:completed`
-
-**Examples**
-
-* `ultralist l is:completed` - show only completed tasks
-* `ultralist l not:completed` - show only incomplete tasks
-
-### Filtering by priority status
-
-* `is:priority`
-* `not:priority`
+* `completed:true`
+* `completed:false`
+* `priority:true`
+* `priority:false`
 
 **Examples**
 
-* `ultralist l is:priority` - show only completed tasks
-* `ultralist l not:priority` - show only incomplete tasks
+* `ultralist l completed:true` - show only completed tasks
+* `ultralist l completed:false` - show only incomplete tasks
+* `ultralist l priority:true` - show only prioritized tasks
+* `ultralist l priority:false` - show only non-prioritized tasks
 
-### Filtering by archived status
+### Filtering archived tasks
 
-* `is:archived`
-* `not:archived` - note that this option is **implicitly added**!  Ultralist defaults to not showing archived tasks.
+* `archived:true`
+* `archived:false` - note that this option is **implicitly added**!  Ultralist defaults to not showing archived tasks.
 
 **Examples**
 
-* `ultralist l is:archived` - show archived tasks
+* `ultralist l archived:true` - show archived tasks
 
 ### Filtering by completion date
 
@@ -66,50 +69,54 @@ Currently, only one `due` filter is allowed.
 * `ultralist l completed:tod` - show tasks that were completed today
 * `ultralist l completed:thisweek` - show tasks that were completed this week
 
-### Filtering by a project or context
+### Filtering by a project, context, or status
 
-* `ultralist l @pomodoro` - show all tasks with a context of `@pomodoro`.
-* `ultralist l +project` - show all tasks with a project of `+project`.
+* `ultralist l project:mobile` - Show all tasks with a project of `mobile`
+* `ultralist l project:mobile,devops` - Show all tasks with a project of `mobile` or `devops`
 
-Remember, `ultralist` is a unix tool, just like any other.  You can use `grep` to combine a complex listing with a filter.
+**Negation filters**
+
+Adding a minus (`-`) to a project, context or status will remove those matching tasks from the list.
+
+* `ultralist l project:-devops` - Show all tasks **without** a devops project.
+* `ultralist l project:mobile,-devops` - Show only tasks with a project of `mobile` but exclude tasks with a `devops` project.
+
+**Combining things**
+
+* `ultralist l project:mobile status:next due:tod` - Show all tasks with a project of `mobile`, a status of `next`, and is due today.
+
+**Combining with grep or fzf**
+
+`ultralist` is a unix tool, just like any other.  You can use `grep` to combine a complex listing with a filter.
 
 Example: `ultralist l due:tom | grep @bob`
+
+Or you can have some fancy times by piping the output to `fzf`:
 
 ### Grouping
 
 * `group:project`
 * `group:context`
+* `group:status`
 
-tasks can be grouped by project or context
-
-* `ultralist l group:project` or `ultralist l group:p` - List all tasks, grouped by project. 
-* `ultralist l group:context` or `ultralist l group:c` - List all tasks, grouped by context. 
+* `ultralist l group:project` or `ultralist l group:p` - List all tasks, grouped by project.
+* `ultralist l group:context` or `ultralist l group:c` - List all tasks, grouped by context.
+* `ultralist l group:status` or `ultralist l group:s` - List all tasks, grouped by status.
 
 ### Showing tasks with notes
 
 Use the `--notes` flag to show notes on tasks when listing.
 
-```
-$ ultralist l --notes due:agenda group:p
-$ ultralist l --notes due:agenda group:p
-```
+
+* `ultralist l --notes duebefore:tom group:p`
+
 ### Real world examples of combining groups and listing filters
 
-Below is the command I run every day.  So often, in fact, I have an alias for it called `up`:
 
-```
-ultralist l due:agenda group:project
-```
+Below is the command I run every day.  So often, in fact, I have an alias for it called `now`:
 
-Show all tasks due tomorrow, and group them by context:
+* `ultralist l duebefore:tom status:now` - Show all tasks due today or earlier, with the status of `now` (I'm using [now/next/later](https://medium.com/adventures-in-consumer-technology/getting-things-done-the-now-next-later-framework-9cc786b4fad8) for prioritization)
+* `ultralist l group:context due:tom` - Show all tasks due tomorrow, and group them by context:
+* `ultralist l completed:tod` - Look back at all the tasks you completed today, and feel good about yourself:
 
-```
-ultralist l group:context due:tom
-```
-
-Look back at all the tasks you completed today, and feel good about yourself:
-
-```
-ultralist l completed:tod
-```
 
