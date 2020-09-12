@@ -8,6 +8,7 @@ github_repo = "https://github.com/ultralist/ultralist-hugo-docs"
 
 [params]
 copyright = "Ultralist LLC"
+privacy_policy = "/privacy"
 
 
 [[menu.main]]
