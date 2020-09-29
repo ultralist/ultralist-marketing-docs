@@ -26,7 +26,7 @@ Here are the following filters available:
 
 ### Filtering by date
 
-`due:(tod|today|tom|tomorrow|overdue|thisweek|nextweek|lastweek|mon|tue|wed|thu|fri|sat|sun|none|<specific date>)`
+`due:(tod|today|tom|tomorrow|thisweek|nextweek|lastweek|mon|tue|wed|thu|fri|sat|sun|none|<specific date>)`
 
 **Examples**
 
