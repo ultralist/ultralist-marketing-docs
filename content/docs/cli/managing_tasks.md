@@ -7,7 +7,7 @@ description: >
 
 ## Listing, filtering and grouping todos
 
-`ultralist` can list todos in a variety of ways, and allows for powerful filtering and grouping.
+See [Showing tasks](../showing_tasks) for detailed documentation on how to show your list.
 
 ## Adding todos
 
@@ -19,18 +19,18 @@ Ultralist expects the due date at the _end_, if there is a due date.
 
 ##### Due date format
 
-For things due today or tomorrow, you can use `due today` and `due tomorrow`. You can also use `due tod` or `due tom`.
+For things due today or tomorrow, you can use `due:today` and `due:tomorrow`. You can also use `due:tod` or `due:tom`.
 
-For things due this week, you can use the first 3 letters of the day name. For instance, `due mon` or `due thu`. **Ultralist will always look forward**.  If today is a Wednesday and you specify `due mon`, the due date will be for the _next Monday_.
+For things due this week, you can use the first 3 letters of the day name. For instance, `due:mon` or `due:thu`. **Ultralist will always look forward**.  If today is a Wednesday and you specify `due:mon`, the due date will be for the _next Monday_.
 
-For specific dates, you can use either `due may 2` or `due 2 may`. The month is always lowercase and 3 letters.
+For specific dates, you can use either `due:may2` or `due:2may`. The month is always lowercase and 3 letters.
 
 ##### Examples
 
 ```
-ultralist add chat with @bob about +specialProject due tom
-ultralist a +lunch make turkey sandwich
-ultralist a +task respond to @shelly about project status due may 3
+ultralist add chat with @bob about +specialProject due:tom
+ultralist a +lunch make turkey sandwich priority:true
+ultralist a +task respond to @shelly about project:mobile status:next due:may3
 ```
 
 ## Completing/Uncompleting todos
@@ -91,11 +91,11 @@ _Be careful!_ once a todo is deleted, it's gone forever!
 
 You can edit a todo's subject or due date The syntax is as follows:
 
-`ultralist e [id] <subject> <due [due]>`
+`ultralist e [id] <subject> <due:[due]> <status:[status]> <completed:[true|false> <priority:[true|false]> <archived:[true|false]>`
 
 ### Editing a todo's subject
 
-When if you do not include `due [date]`, then just the subject will be edited.
+When if you do not include `due:[date]`, then just the subject will be edited.
 
 **Example**
 
@@ -107,21 +107,21 @@ The above will edit just the todo's subject, and leave the due date alone.
 
 ### Editing a todo's due date
 
-If you only pass `due [date]`, the todo's due date will be updated, and the subject will remain the same.
+If you only pass `due:[date]`, the todo's due date will be updated, and the subject will remain the same.
 
 ```
-ultralist e 3 due tom
+ultralist e 3 due:tom
 ```
 The above will set the todo item with id of `3`'s due date to tomorrow, and it will leave the subject alone. 
 
 ### Removing a todo's due date
 
-You can also say `due none` to un-set an existing due date.
+You can also say `due:none` to un-set an existing due date.
 
 **Example**
 
 ```
-ultralist e 3 due none
+ultralist e 3 due:none
 ```
 
 ## Notes management
@@ -141,10 +141,10 @@ or
 Note added.
 ```
 
-Then you can list your todos with notes by using `ultralist list notes` or `ultralist l n`
+Then you can list your todos with notes by using `ultralist list --notes`
 
 ```
-➜ ultralist l n
+➜ ultralist l --notes
 
 all
 1    [ ]  tomorrow    some important task for the +project
