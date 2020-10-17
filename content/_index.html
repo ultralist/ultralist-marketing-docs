@@ -170,7 +170,7 @@ description: Ultralist is the best task management software for software develop
     while (true) {
       cli.reset()
       cli.printPrompt()
-      await cli.type("ultralist l by context")
+      await cli.type("ultralist l group:context")
       cli.enterKey()
       cli.println(Ultralist.formatHeading("No Contexts"))
       cli.println(Ultralist.format(6,"", "+security update to latest version of securitrex 0.4"))
@@ -190,7 +190,7 @@ description: Ultralist is the best task management software for software develop
       cli.reset()
 
       cli.printPrompt()
-      await cli.type("ultralist l by project")
+      await cli.type("ultralist l group:project")
       cli.println(Ultralist.formatHeading("devops")),
       cli.println(Ultralist.formatOverdue(9,"Fri Feb 15", "+devops ping @mike about flaky EC2 instance"))
       cli.println(Ultralist.format(8,"tomorrow", "+devops have my reserved instances sold?"))
@@ -217,7 +217,7 @@ description: Ultralist is the best task management software for software develop
       cli.printPrompt()
       await cli.wait(3000)
 
-      await cli.type("ultralist l completed tod")
+      await cli.type("ultralist l completed:tod")
       cli.enterKey()
       cli.println(Ultralist.format(2,"today", "+mobile test newest changes in AWS device farm", true))
       cli.printPrompt()
@@ -229,7 +229,7 @@ description: Ultralist is the best task management software for software develop
       cli.printPrompt()
       await cli.wait(3000)
 
-      await cli.type("ultralist l due tom")
+      await cli.type("ultralist l due:tom")
       cli.enterKey()
       cli.println(Ultralist.format(3,"tomorrow", "+mobile +security ask @mike about security updates"))
       cli.println(Ultralist.format(8,"tomorrow", "+devops have my reserved instances sold?"))
@@ -245,7 +245,7 @@ description: Ultralist is the best task management software for software develop
       cli.printPrompt()
       await cli.wait(3000)
 
-      await cli.type("ultralist l +devops")
+      await cli.type("ultralist l | grep +devops")
       cli.enterKey()
       cli.println(Ultralist.formatHeading("devops"))
       cli.println(Ultralist.format(3,"tomorrow", "+mobile +security ask @mike about security updates"))
