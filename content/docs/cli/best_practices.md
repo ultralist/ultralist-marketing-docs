@@ -37,6 +37,9 @@ alias wed="ultralist l goup:project due:wed"
 alias thu="ultralist l goup:project due:thu"
 alias fri="ultralist l goup:project due:fri"
 alias c="ultralist l completed:tod"
+
+# pipe ultralist into fzf for ultra-fast searching of tasks!
+alias uf="script -c \"ultralist l\"  < /dev/null | fzf --ansi"
 ```
 
 Running `up` is _much_ easier than typing `ultralist l due:agenda group:project` every time!
