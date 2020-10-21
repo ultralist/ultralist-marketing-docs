@@ -44,7 +44,6 @@ alias uf="script -c \"ultralist l\"  < /dev/null | fzf --ansi"
 
 Running `up` is _much_ easier than typing `ultralist l due:agenda group:project` every time!
 
-
 ### Show your ultralist every time you open a shell.
 
 Some folks love to see their list every time they open a shell.  You can easily do that.

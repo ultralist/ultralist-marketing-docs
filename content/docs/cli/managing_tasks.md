@@ -36,20 +36,20 @@ ultralist a +task respond to @shelly about project:mobile status:next due:may3
 ## Completing/Uncompleting todos
 
 * `ultralist complete [id]` or `ultralist c [id]` - complete a todo
-* `ultralist complete [id] --revert` or `ultralist c [id] --revert` - un-complete a todo
+* `ultralist uncomplete [id]` or `ultralist uc [id]` - un-complete a todo
 
 ##### Examples
 
 ```
 ultralist complete 35
 ultralist c 35
-ultralist c --revert 35
+ultralist uc 35
 ```
 
 ## Archiving/Unarchiving todos
 
 * `ultralist archive [id]` or `ultralist ar [id]` - archive a todo
-* `ultralist archive [id] --revert` or `ultralist ar [id] --revert` - unarchive a todo
+* `ultralist unarchive [id]` or `ultralist uar [id]` - unarchive a todo
 * `ultralist ar c` - archive all completed todos (_a great command to run at the end of the day!_)
 
 ##### Examples
@@ -57,21 +57,21 @@ ultralist c --revert 35
 ```
 ultralist archive 35
 ultralist ar 35
-ultralist ar --revert 35
+ultralist uar 35
 ultralist ar c
 ```
 
 ## Prioritizing/Unprioritizing todos
 
 * `ultralist prioritize [id]` or `ultralist p [id]` -prioritize a todo
-* `ultralist prioritize [id] --revert` or `ultralist p [id] --revert` - un-prioritize a todo
+* `ultralist unprioritize [id]` or `ultralist up [id]` - un-prioritize a todo
 
 ##### Examples
 
 ```
 ultralist prioritize 35
 ultralist p 35
-ultralist p --revert 35
+ultralist up 35
 ```
 
 ## Deleting todos
