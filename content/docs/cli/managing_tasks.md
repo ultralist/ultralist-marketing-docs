@@ -221,3 +221,10 @@ You can then build powerful aliases around showing todos with a particular statu
 Or you can see your whole list, grouped by status:
 
 `ultralist list group:status`
+
+
+#### Removing a todo's status
+
+Simply set the status of a todo to `none`.
+
+`ultralist e 33 status:none`
