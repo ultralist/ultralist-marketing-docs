@@ -1,13 +1,13 @@
 ---
-title: "Managing tasks"
+title: "Managing todos"
 weight: 3
 description: >
-  Learn how to manage tasks using the Ultralist CLI.
+  Learn how to manage todos using the Ultralist CLI.
 ---
 
 ## Listing, filtering and grouping todos
 
-See [Showing tasks](../showing_tasks) for detailed documentation on how to show your list.
+See [Showing todos](../showing_tasks) for detailed documentation on how to show your list.
 
 ## Adding todos
 
@@ -30,7 +30,7 @@ For specific dates, you can use either `due:may2` or `due:2may`. The month is al
 ```
 ultralist add chat with @bob about +specialProject due:tom
 ultralist a +lunch make turkey sandwich priority:true
-ultralist a +task respond to @shelly about project:mobile status:next due:may3
+ultralist a +todo respond to @shelly about project:mobile status:next due:may3
 ```
 
 ## Completing/Uncompleting todos
@@ -135,11 +135,11 @@ ultralist e 3 due:none
 
 ## Notes management
 
-Each task can have many notes.  Notes are extra info (links, context, etc).
+Each todo can have many notes.  Notes are extra info (links, context, etc).
 
-### Adding a note to a task
+### Adding a note to a todo
 
-Add a note to a task with the following syntax:
+Add a note to a todo with the following syntax:
 
 `ultralist addnote <todoId> <content>`
 or
@@ -156,11 +156,11 @@ Then you can list your todos with notes by using `ultralist list --notes`
 ➜ ultralist l --notes
 
 all
-1    [ ]  tomorrow    some important task for the +project
+1    [ ]  tomorrow    some important todo for the +project
   0                     adding a note
 ```
 
-The above will add a note to the task with an id of `0`.
+The above will add a note to the todo with an id of `0`.
 
 ### Editing a note
 
@@ -196,3 +196,28 @@ or
 ➜ ultralist dn 1 0
 Note deleted.
 ```
+
+## Handling todo statuses
+
+A todo can have a `status`.  This allows you to further customize your task management.
+
+**In ultralist, a status should be a single lower-case word**.
+
+For instance, suppose you like to manage your todos using a [now, next, later](https://medium.com/adventures-in-consumer-technology/getting-things-done-the-now-next-later-framework-9cc786b4fad8) format.
+
+You can add a status when adding a todo:
+
+```
+ultralist add this is something I need to do right away status:now
+ultralist add this is a todo for next week status:next
+ultralist add this is a someday todo status:later
+```
+
+You can then build powerful aliases around showing todos with a particular status.  For instance, to get an idea of things you need to work on now:
+
+`ultralist list status:now`
+
+
+Or you can see your whole list, grouped by status:
+
+`ultralist list group:status`
