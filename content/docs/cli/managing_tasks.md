@@ -141,12 +141,12 @@ Each task can have many notes.  Notes are extra info (links, context, etc).
 
 Add a note to a task with the following syntax:
 
-`ultralist add note <todoId> <content>`
+`ultralist addnote <todoId> <content>`
 or
-`ultralist a n <todoId> <content>`
+`ultralist an <todoId> <content>`
 
 ```
-➜ ultralist a n 1 here is a note
+➜ ultralist an 1 here is a note
 Note added.
 ```
 
@@ -168,11 +168,11 @@ When you edit a note, you replace all of the contents of the note.
 
 Use the following syntax:
 
-`ultralist edit note <todoId> <noteId> <content>`
+`ultralist editnote <todoId> <noteId> <content>`
 
 or
 
-`ultralist e n <todoId> <noteId> <content>`
+`ultralist en <todoId> <noteId> <content>`
 
 **Example**
 
@@ -184,15 +184,15 @@ Note edited.
 
 Use the following syntax:
 
-`ultralist delete note <todoId> <noteId>`
+`ultralist deletenote <todoId> <noteId>`
 
 or
 
-`ultralist d n <todoId> <noteId>`
+`ultralist dn <todoId> <noteId>`
 
 **Example**
 
 ```
-➜ ultralist d n 1 0
+➜ ultralist dn 1 0
 Note deleted.
 ```
