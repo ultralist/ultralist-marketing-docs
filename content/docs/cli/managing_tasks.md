@@ -205,13 +205,17 @@ A todo can have a `status`.  This allows you to further customize your task mana
 
 For instance, suppose you like to manage your todos using a [now, next, later](https://medium.com/adventures-in-consumer-technology/getting-things-done-the-now-next-later-framework-9cc786b4fad8) format.
 
-You can add a status when adding a todo:
+#### Adding tasks with a status
+
+You can set a status when adding a todo:
 
 ```
 ultralist add this is something I need to do right away status:now
 ultralist add this is a todo for next week status:next
 ultralist add this is a someday todo status:later
 ```
+
+#### Listing tasks by status
 
 You can then build powerful aliases around showing todos with a particular status.  For instance, to get an idea of things you need to work on now:
 
