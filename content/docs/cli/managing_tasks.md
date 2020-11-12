@@ -51,6 +51,11 @@ ultralist uc 35
 * `ultralist archive [id]` or `ultralist ar [id]` - archive a todo
 * `ultralist unarchive [id]` or `ultralist uar [id]` - unarchive a todo
 * `ultralist ar c` - archive all completed todos (_a great command to run at the end of the day!_)
+* `ultralist ar gc` - Garbage collect.
+
+#### Garbage collection
+
+As you use Ultralist, you'll notice that your IDs continue to increment higher and higher.  Running garbage collection will delete all archived todos, thus re-claiming low todo IDs.
 
 ##### Examples
 
@@ -60,6 +65,10 @@ ultralist ar 35
 ultralist uar 35
 ultralist ar c
 ```
+
+## Garbage collection
+
+
 
 ## Prioritizing/Unprioritizing todos
 
