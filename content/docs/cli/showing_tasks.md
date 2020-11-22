@@ -73,6 +73,7 @@ Currently, only one `due` filter is allowed.
 
 * `ultralist l project:mobile` - Show all tasks with a project of `mobile`
 * `ultralist l project:mobile,devops` - Show all tasks with a project of `mobile` or `devops`
+* `ultralist l context:groceries` - Show all tasks that have the context `groceries`
 
 **Negation filters**
 
