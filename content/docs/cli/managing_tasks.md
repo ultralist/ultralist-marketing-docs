@@ -66,10 +66,6 @@ ultralist uar 35
 ultralist ar c
 ```
 
-## Garbage collection
-
-
-
 ## Prioritizing/Unprioritizing todos
 
 * `ultralist prioritize [id]` or `ultralist p [id]` -prioritize a todo
